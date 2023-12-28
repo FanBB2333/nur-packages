@@ -15,6 +15,8 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
+  mos = pkgs.callPackage ./pkgs/mos { };
+  hello-nur = pkgs.callPackage ./pkgs/hello-nur {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
